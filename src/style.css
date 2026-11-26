@@ -1984,3 +1984,26 @@ main .team-role,
     font-size: clamp(23px, 6.2vw, 28px);
   }
 }
+
+
+/* DESKTOP HEADER FIT FIX — preserve existing layout and all mobile styling.
+   Only scales the desktop navigation and header controls on narrower PC/laptop widths. */
+@media (min-width: 851px) and (max-width: 1700px) {
+  .header .desktop-nav {
+    margin-inline: clamp(6px, 0.7vw, 12px) !important;
+    gap: clamp(4px, 0.35vw, 7px) !important;
+  }
+  .header .desktop-nav a {
+    font-size: clamp(10px, 0.75vw, 12px) !important;
+    letter-spacing: 0 !important;
+  }
+  .header .header-actions {
+    gap: clamp(6px, 0.5vw, 9px) !important;
+  }
+  .header .theme-toggle,
+  .header .header-cta {
+    font-size: clamp(9px, 0.68vw, 11px) !important;
+    padding: 10px 11px !important;
+    white-space: nowrap;
+  }
+}
