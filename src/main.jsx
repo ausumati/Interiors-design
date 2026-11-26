@@ -8,7 +8,7 @@ import Lenis from 'lenis';
 import './style.css';
 gsap.registerPlugin(ScrollTrigger);
 
-const hero = '/images/nextwave-hero.png';
+const hero = `${import.meta.env.BASE_URL}images/nextwave-hero.png`;
 const images = {
   living: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85',
   kitchen: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85',
